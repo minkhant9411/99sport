@@ -7,7 +7,9 @@
     font-family: 'Raleway', sans-serif
 }
 
-section {
+section,
+body,
+html {
     overflow-x: hidden;
 }
 
@@ -162,7 +164,6 @@ a.active.navlink::after {
     height: 100vh;
     width: 100vw;
     padding-top: 71px;
-    overflow-y: hidden;
 }
 
 #hero-section .hero {

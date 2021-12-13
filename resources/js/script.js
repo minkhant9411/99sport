@@ -113,22 +113,29 @@ for (let i = 0; i <= navLinks.length; i++) {
         navLinks[i].removeAttribute("data-bs-target", "#navbarSupportedContent");
     });
     navLinks[i].addEventListener("click", () => {
+
         click = 0;
-        if (navLinks[i].classList.contains("active"))
-            if (
-                max995px.matches //media query is true of false
-            ) {
-                setTimeout(() => {
-                    navLinks[i].setAttribute("data-bs-toggle", "collapse");
-                    navLinks[i].setAttribute("data-bs-target", "#navbarSupportedContent");
-                    if (click < 1) {
-                        changemenubtn();
-                        navLinks[i].click();
-                    }
-                    click++;
-                }, 300);
+        for (let j = 0; j <= navLinks.length; j++) {
+            if (navLinks[j] == navLinks[i]) {
+                navLinks[j].classList.remove('active');
+                navLinks[i].classList.add('active');
             }
-            //width change listener
+        }
+
+        if (
+            max995px.matches //media query is true of false
+        ) {
+            setTimeout(() => {
+                navLinks[i].setAttribute("data-bs-toggle", "collapse");
+                navLinks[i].setAttribute("data-bs-target", "#navbarSupportedContent");
+                if (click < 1) {
+                    changemenubtn();
+                    navLinks[i].click();
+                }
+                click++;
+            }, 300);
+        }
+        //width change listener
         max995px.addListener(() => {
             navLinks[i].removeAttribute("data-bs-toggle", "collapse");
             navLinks[i].removeAttribute("data-bs-target", "#navbarSupportedContent");
