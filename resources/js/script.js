@@ -61,7 +61,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
-            $('.to-top').css({ 'opacity': '1', 'bottom': '15px' });
+            $('.to-top').css({ 'opacity': '1', 'bottom': '20px' });
         } else {
             $('.to-top').css({ 'opacity': '0', 'bottom': '0px' });
         }
