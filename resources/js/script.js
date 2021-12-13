@@ -114,15 +114,6 @@ for (let i = 0; i <= navLinks.length; i++) {
     });
     navLinks[i].addEventListener("click", () => {
         click = 0;
-        for (let j = 0; j <= navLinks.length; j++) {
-
-            navLinks[j].classList.remove('active');
-            if (navLinks[j] == navLinks[i]) {
-                navLinks[i].classList.add('active');
-            }
-        };
-
-
         if (
             max995px.matches //media query is true of false
         ) {
@@ -141,5 +132,13 @@ for (let i = 0; i <= navLinks.length; i++) {
             navLinks[i].removeAttribute("data-bs-toggle", "collapse");
             navLinks[i].removeAttribute("data-bs-target", "#navbarSupportedContent");
         });
+
+        for (let j = 0; j <= navLinks.length; j++) {
+
+            navLinks[j].classList.remove('active');
+            if (navLinks[j] == navLinks[i]) {
+                navLinks[i].classList.add('active');
+            }
+        };
     });
 }

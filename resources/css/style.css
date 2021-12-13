@@ -330,12 +330,18 @@ a.active.navlink::after {
 **/
 
 @media (max-width:700px) {
+    #hero-section .hero img {
+        height: 300px;
+    }
+}
+
+@media (max-width:1024px) {
     #hero-section .hero {
         flex-direction: column;
         text-align: center;
     }
     #hero-section .hero img {
-        height: 300px;
+        height: 400px;
         padding: 25px;
         animation: none;
         order: 1;
@@ -351,12 +357,12 @@ a.active.navlink::after {
         order: 2;
     }
     .waves {
-        height: 114px;
+        height: 130px;
         bottom: -10px;
     }
     .hero-waves {
         height: 100px;
-        width: auto;
+        width: 100%;
         /* z-index: 999;
         position: absolute;
         bottom: 0;
