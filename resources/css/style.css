@@ -194,6 +194,7 @@ a.active.navlink::after {
 }
 
 #hero-section .hero .hero-btn {
+    margin: auto 0;
     text-decoration: none;
     padding: 15px;
     background-color: #18d26e;
@@ -207,9 +208,10 @@ a.active.navlink::after {
     background-color: #008040;
 }
 
-.hero-btn:last-child {
+
+/* .hero-btn:last-child {
     margin-left: 30px;
-}
+} */
 
 #hero-section .hero img {
     /* display: none; */
@@ -544,8 +546,8 @@ footer a:hover {
 
 @media (max-width:1024px) {
     #hero-section .hero {
-        flex-direction: column;
         text-align: center;
+        flex-direction: column;
     }
     #hero-section .hero img {
         height: 500px;
@@ -584,6 +586,12 @@ footer a:hover {
     #hero-section .hero img {
         height: 400px;
     }
+    #hero-section .hero .hero-btn {
+        font-size: 15px;
+    }
+    /* .hero-btn:last-child {
+        margin-left: 20px;
+    } */
     .hero-waves {
         height: 65px;
         width: 100%;
@@ -591,5 +599,22 @@ footer a:hover {
         position: absolute;
         bottom: 0;
         left: 0; */
+    }
+    @media (max-width:325px) {
+        #hero-section .hero img {
+            height: 250px;
+        }
+        #hero-section .hero h2 {
+            font-size: 19px;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+        #hero-section .hero p {
+            font-size: 13px;
+        }
+        #hero-section .hero .hero-btn {
+            font-size: 13px;
+            padding: 13px;
+        }
     }
 }
