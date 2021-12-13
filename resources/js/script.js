@@ -59,6 +59,16 @@ $(document).ready(function() {
             }
         });
 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 40) {
+            $('.to-top').fadeIn();
+        } else {
+            $('.to-top').fadeOut();
+        }
+    })
+    $(".to-top").click(function() {
+        $('html ,body').animate({ scrollTop: 0 }, 300);
+    })
 
 
 
@@ -143,3 +153,12 @@ for (let i = 0; i <= navLinks.length; i++) {
         };
     });
 }
+
+// back to top
+
+// window.addEventListener("scroll", () => {
+//     console.log(window.scrollY);
+//     if (window.scrollY > 10) {
+//         toTop.classList.toggle("activet");
+//     }
+// })

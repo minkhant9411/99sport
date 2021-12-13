@@ -81,6 +81,37 @@ html {
 
 
 /*
+* back to top
+**/
+
+.to-top {
+    height: 30px;
+    width: 30px;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: #18d26e;
+    position: fixed;
+    z-index: 9999;
+    transition: all 0.5s ease;
+}
+
+.to-top a {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-top a i {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/*
 * navbar
 **/
 
