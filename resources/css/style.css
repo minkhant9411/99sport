@@ -161,8 +161,9 @@ a.active.navlink::after {
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/hero-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
+    margin-top: 71px;
     padding-top: 71px;
 }
 
@@ -227,16 +228,6 @@ a.active.navlink::after {
     100% {
         transform: translateY(-10px);
     }
-}
-
-.waves {
-    display: block;
-    height: 136.9px;
-    width: 100%;
-    background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .hero-waves {
@@ -321,52 +312,6 @@ a.active.navlink::after {
     }
     100% {
         transform: translate(85px, 0%);
-    }
-}
-
-
-/* 
-*media query hero section 
-**/
-
-@media (max-width:1024px) {
-    #hero-section .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-    #hero-section .hero img {
-        height: 400px;
-        padding: 25px;
-        animation: none;
-        order: 1;
-    }
-    #hero-section .hero h2 {
-        font-size: 25px;
-        font-weight: 600;
-    }
-    #hero-section .hero p {
-        font-size: 17px;
-    }
-    .hero-text {
-        order: 2;
-    }
-    .waves {
-        height: 130px;
-        bottom: -10px;
-    }
-    .hero-waves {
-        height: 100px;
-        width: 100%;
-        /* z-index: 999;
-        position: absolute;
-        bottom: 0;
-        left: 0; */
-    }
-}
-
-@media (max-width:625px) {
-    #hero-section .hero img {
-        height: 300px;
     }
 }
 
@@ -589,4 +534,61 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: #c4c4c4;
+}
+
+
+/* 
+*media query hero section 
+**/
+
+@media (max-width:1024px) {
+    #hero-section .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    #hero-section .hero img {
+        height: 500px;
+        padding: 25px;
+        animation: none;
+        order: 1;
+    }
+    #hero-section .hero h2 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #hero-section .hero p {
+        font-size: 17px;
+    }
+    .hero-text {
+        order: 2;
+    }
+    .hero-waves {
+        height: 100px;
+        width: 100%;
+        /* z-index: 999;
+        position: absolute;
+        bottom: 0;
+        left: 0; */
+    }
+}
+
+@media (max-width:625px) {
+    h1 {
+        font-size: 25px;
+    }
+    #hero-section {
+        padding-top: 30px;
+        margin-top: 71px;
+    }
+    #hero-section .hero img {
+        height: 400px;
+    }
+    .hero-waves {
+        height: 65px;
+        width: 100%;
+        /* z-index: 999;
+        position: absolute;
+        bottom: 0;
+        left: 0; */
+    }
 }
