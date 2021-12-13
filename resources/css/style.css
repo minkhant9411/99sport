@@ -329,12 +329,6 @@ a.active.navlink::after {
 *media query hero section 
 **/
 
-@media (max-width:700px) {
-    #hero-section .hero img {
-        height: 300px;
-    }
-}
-
 @media (max-width:1024px) {
     #hero-section .hero {
         flex-direction: column;
@@ -367,6 +361,12 @@ a.active.navlink::after {
         position: absolute;
         bottom: 0;
         left: 0; */
+    }
+}
+
+@media (max-width:625px) {
+    #hero-section .hero img {
+        height: 300px;
     }
 }
 
