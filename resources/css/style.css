@@ -551,10 +551,14 @@ h1::after {
     height: auto;
     /* transform: scale(1.15); */
     transition: all 0.5s ease;
+    filter: blur(0);
+    -webkit-filter: blur(0);
 }
 
 #gellary img:hover {
     transform: scale(1.1);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
 
