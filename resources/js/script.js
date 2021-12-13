@@ -81,7 +81,7 @@ const galleryLightbox = GLightbox({
 
 // animation on scroll
 AOS.init({
-    duration: 1000,
+    duration: 500,
     easing: "ease-in-out",
     once: true,
     mirror: false,
