@@ -116,6 +116,10 @@ html {
 * navbar
 **/
 
+.navbar {
+    background: transparent;
+}
+
 .navbar-brand {
     font-family: "Roboto Slab", serif;
     font-weight: 700;
@@ -195,11 +199,10 @@ a.active.navlink::after {
     background-repeat: no-repeat;
     height: 100%;
     width: 100vw;
-    margin-top: 71px;
-    padding-top: 71px;
 }
 
 #hero-section .hero {
+    padding-top: 75px;
     align-items: center;
 }
 

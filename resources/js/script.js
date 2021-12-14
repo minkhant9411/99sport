@@ -1,17 +1,15 @@
 $(document).ready(function() {
-    $(".js--section-feature").waypoint(
+    $("#features").waypoint(
         function(direction) {
             if (direction == "down") {
-                $("nav").addClass("sticky");
-                $(".fa--up").addClass("uparrow");
-                $(".fa--up").css("display", "flex");
+                $(".navbar").addClass("bg-dark");
+                $(".navbar").addClass("fixed-top");
             } else {
-                $("nav").removeClass("sticky");
-                $(".fa--up").removeClass("uparrow");
-                $(".fa--up").css("display", "none");
+                $(".navbar").removeClass("bg-dark");
+                $(".navbar").removeClass("fixed-top");
             }
         }, {
-            offset: "150px",
+            offset: "-150px",
         }
     );
 
